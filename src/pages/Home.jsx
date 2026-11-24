@@ -92,7 +92,7 @@ export default function Home({ setActiveTab }) {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-1 hover:rotate-0 transition-transform duration-300">
               <img
-                src="/Images/site/ezgif-frame-009242.jpg"
+                src="/Images/site/nova_estrutura_quintal_1.jpg"
                 alt="Estrutura do Hotel Quintal dos Animais em Monte Mor"
                 className="w-full h-80 sm:h-96 object-cover"
               />
@@ -105,6 +105,46 @@ export default function Home({ setActiveTab }) {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* 3.5 TOUR EM VÍDEO DAS NOVAS INSTALAÇÕES REFORMADAS */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 rounded-3xl p-8 sm:p-12 text-white border-2 border-amber-400 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-6 space-y-4">
+            <span className="inline-flex items-center gap-2 bg-amber-500 text-gray-950 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider">
+              <Sparkles className="w-3.5 h-3.5 fill-gray-950" /> Estrutura Reformada • Conheça os Novos Boxes
+            </span>
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+              Tour em Vídeo pelas Nossas Novas Acomodações
+            </h2>
+            <p className="text-amber-100/90 text-sm sm:text-base leading-relaxed">
+              Geraldo Gomes preparou novas acomodações estruturadas com piso branco lavável, divisões seguras e pintura nova para acolher seu pet com higiene total e separação por porte.
+            </p>
+            <div className="pt-2">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold px-6 py-3 rounded-full text-sm shadow-lg transition-transform hover:scale-105"
+              >
+                <MessageCircle className="w-4 h-4 fill-white" />
+                <span>Agendar uma Visita Presencial</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="lg:col-span-6 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-400/40 bg-black">
+            <video
+              controls
+              playsInline
+              className="w-full max-h-[380px] object-cover mx-auto"
+              poster="/Images/site/nova_estrutura_boxes_3.jpg"
+            >
+              <source src="/Images/site/estrutura_nova_boxes.mp4" type="video/mp4" />
+              Seu navegador não suporta a exibição de vídeos.
+            </video>
+          </div>
         </div>
       </section>
 
@@ -178,46 +218,6 @@ export default function Home({ setActiveTab }) {
 
       {/* 4.8 NOVIDADE EXCLUSIVA • MOCKUP DO APLICATIVO DO TUTOR */}
       <AppFeatureSection setActiveTab={setActiveTab} />
-
-      {/* 4.9 TOUR EM VÍDEO DAS NOVAS INSTALAÇÕES */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 rounded-3xl p-8 sm:p-12 text-white border-2 border-amber-400 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-6 space-y-4">
-            <span className="inline-flex items-center gap-2 bg-amber-500 text-gray-950 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5 fill-gray-950" /> Estrutura Reformada • Conheça os Novos Boxes
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
-              Tour em Vídeo pelas Nossas Novas Acomodações
-            </h2>
-            <p className="text-amber-100/90 text-sm sm:text-base leading-relaxed">
-              Geraldo Gomes preparou novas acomodações estruturadas com piso branco lavável, divisões seguras e pintura nova para acolher seu pet com higiene total e separação por porte.
-            </p>
-            <div className="pt-2">
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold px-6 py-3 rounded-full text-sm shadow-lg transition-transform hover:scale-105"
-              >
-                <MessageCircle className="w-4 h-4 fill-white" />
-                <span>Agendar uma Visita Presencial</span>
-              </a>
-            </div>
-          </div>
-
-          <div className="lg:col-span-6 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-400/40 bg-black">
-            <video
-              controls
-              playsInline
-              className="w-full max-h-[380px] object-cover mx-auto"
-              poster="/Images/site/252.jpg"
-            >
-              <source src="/Images/site/estrutura_nova_boxes.mp4" type="video/mp4" />
-              Seu navegador não suporta a exibição de vídeos.
-            </video>
-          </div>
-        </div>
-      </section>
 
       {/* 5. GALERIA DE FOTOS INTERATIVA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">

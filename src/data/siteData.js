@@ -179,13 +179,12 @@ export const localStoryContent = {
 };
 
 export const galleryImages = [
+  { url: "/Images/site/nova_estrutura_quintal_1.jpg", title: "Novo Quintal com Cerquinhas e Rampa", alt: "Novo quintal do Hotel Quintal dos Animais reformado com cerquinha e brinquedos" },
+  { url: "/Images/site/nova_estrutura_panoramica_2.jpg", title: "Vista Panorâmica da Nova Estrutura", alt: "Vista panorâmica da nova estrutura do Hotel Quintal dos Animais" },
+  { url: "/Images/site/nova_estrutura_boxes_3.jpg", title: "Novos Boxes com Piso e Área Coberta", alt: "Novas acomodações com piso branco lavável e portão de segurança" },
   { url: "/Images/site/252.jpg", title: "Momento de afeto e aconchego", alt: "Cuidador dando carinho ao pet hospedado" },
   { url: "/Images/site/1414.jpg", title: "Carinho e supervisão constante", alt: "Pet feliz recebendo atenção no hotel para cachorro" },
-  { url: "/Images/site/00202.jpg", title: "Amplo espaço acolhedor", alt: "Cachorro no Hotel Quintal dos Animais em Monte Mor" },
-  { url: "/Images/site/2525.jpg", title: "Socialização harmoniosa", alt: "Cães interagindo com tranquilidade" },
-  { url: "/Images/site/27452.jpg", title: "Descanso protegido", alt: "Pet relaxando nas acomodações" },
-  { url: "/Images/site/IMG-20260805-WA0002.jpg", title: "Instalações acolhedoras", alt: "Estrutura do Hotel Quintal dos Animais no Parque Café I Monte Mor" },
-  { url: "/Images/site/hotel-pet-santo-andre-1.png.webp", title: "Espaço seguro e delimitado", alt: "Área de recreação para cachorros em Monte Mor" }
+  { url: "/Images/site/2525.jpg", title: "Socialização harmoniosa", alt: "Cães interagindo com tranquilidade" }
 ];
 
 export const faqData = [

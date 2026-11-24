@@ -2,7 +2,7 @@ import React from 'react';
 import { servicesData, companyInfo } from '../data/siteData';
 import PricingSection from '../components/PricingSection';
 import ReviewCTASection from '../components/ReviewCTASection';
-import { CheckCircle2, MessageCircle, ShieldCheck, HeartHandshake, Home as HomeIcon, Sun, Trees, Sparkles, Clock, AlertCircle, CalendarCheck } from 'lucide-react';
+import { CheckCircle2, MessageCircle, ShieldCheck, HeartHandshake, Home as HomeIcon, Sun, Trees, Sparkles, Clock, AlertCircle, CalendarCheck, Play } from 'lucide-react';
 
 export default function Servicos({ setActiveTab }) {
   const getServiceIcon = (name) => {
@@ -24,18 +24,55 @@ export default function Servicos({ setActiveTab }) {
           <Sparkles className="w-3.5 h-3.5 fill-amber-600 text-amber-600" /> Nossos Serviços • Monte Mor & RMC
         </span>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
-          Hospedagem Canina, Day Care e Creche Pet em Monte Mor e Campinas
+          Hospedagem Canina 24 Horas, Day Care e Creche Pet em Monte Mor
         </h1>
         <p className="text-lg text-gray-600 font-medium">
-          Conheça as modalidades de cuidado desenvolvidas para garantir diversão, descanso e segurança absoluta para o seu cachorro.
+          Conheça as modalidades de cuidado desenvolvidas para garantir diversão, descanso e segurança absoluta para o seu cachorro em nossas novas instalações.
         </p>
       </div>
 
-      {/* LISTA DETALHADA DOS SERVIÇOS */}
+      {/* VÍDEO TOUR OFICIAL DA NOVA ESTRUTURA REFORMADA */}
+      <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 rounded-3xl p-6 sm:p-10 text-white border-2 border-amber-400 shadow-2xl">
+        <div className="max-w-3xl mx-auto text-center space-y-3 mb-6">
+          <span className="inline-flex items-center gap-2 bg-amber-500 text-gray-950 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5 fill-gray-950" /> Vídeo da Nova Estrutura • Geraldo Gomes
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
+            Tour em Vídeo pelas Nossas Novas Instalações
+          </h2>
+          <p className="text-sm text-gray-300">
+            Veja as reformas recentes gravadas pelo Geraldo: novos boxes com piso branco lavável, cerquinhas firmes de madeira e separação por porte para garantir máxima higiene e tranquilidade.
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-400/50 bg-black">
+          <video
+            controls
+            playsInline
+            className="w-full max-h-[460px] object-cover mx-auto"
+            poster="/Images/site/nova_estrutura_boxes_3.jpg"
+          >
+            <source src="/Images/site/estrutura_nova_boxes.mp4" type="video/mp4" />
+            Seu navegador não suporta a exibição de vídeos.
+          </video>
+        </div>
+      </section>
+
+      {/* LISTA DETALHADA DOS SERVIÇOS COM FOTOS REAIS DA NOVA ESTRUTURA */}
       <div className="space-y-10">
         {servicesData.map((service, index) => {
           const isEven = index % 2 === 0;
           const whatsappServiceUrl = `https://wa.me/${companyInfo.whatsappRaw}?text=Ol%C3%A1%2C%20Geraldo!%20Gostaria%20de%20consultar%20valores%20para%20o%20servi%C3%A7o%20de%3A%20${encodeURIComponent(service.title)}`;
+
+          const getServiceImage = (idx) => {
+            switch(idx) {
+              case 0: return "/Images/site/nova_estrutura_quintal_1.jpg";
+              case 1: return "/Images/site/nova_estrutura_boxes_3.jpg";
+              case 2: return "/Images/site/nova_estrutura_panoramica_2.jpg";
+              case 3: return "/Images/site/nova_estrutura_boxes_3.jpg";
+              default: return "/Images/site/252.jpg";
+            }
+          };
 
           return (
             <div
@@ -97,18 +134,24 @@ export default function Servicos({ setActiveTab }) {
 
               <div className="lg:col-span-5">
                 <div className="relative rounded-3xl overflow-hidden shadow-lg border-4 border-amber-100">
-                  <img
-                    src={
-                      index === 0 ? "/Images/site/00202.jpg" :
-                      index === 1 ? "/Images/site/1414.jpg" :
-                      index === 2 ? "/Images/site/27452.jpg" : "/Images/site/2525.jpg"
-                    }
-                    alt={service.title}
-                    className="w-full h-72 sm:h-80 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-transparent flex items-end p-6">
-                    <span className="text-white font-bold text-sm bg-black/40 backdrop-blur-md px-3 py-1 rounded-lg border border-white/20">
-                      Estrutura com Boxes e Piso • Monte Mor/SP
+                  {index === 3 ? (
+                    <video
+                      controls
+                      playsInline
+                      className="w-full h-72 sm:h-80 object-cover"
+                      poster="/Images/site/nova_estrutura_boxes_3.jpg"
+                      src="/Images/site/estrutura_nova_boxes.mp4"
+                    />
+                  ) : (
+                    <img
+                      src={getServiceImage(index)}
+                      alt={service.title}
+                      className="w-full h-72 sm:h-80 object-cover"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-transparent flex items-end p-6 pointer-events-none">
+                    <span className="text-white font-bold text-sm bg-black/50 backdrop-blur-md px-3 py-1 rounded-lg border border-white/20">
+                      {index === 3 ? '▶ Vídeo da Nova Estrutura' : 'Nova Estrutura Real • Monte Mor/SP'}
                     </span>
                   </div>
                 </div>
