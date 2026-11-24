@@ -43,22 +43,22 @@ const tabToPath = (tabId) => {
 const pageMetadata = {
   home: {
     title: 'Hotel Quintal dos Animais | Hotel para Cachorro em Monte Mor e Campinas',
-    description: 'Hospedagem canina, day care e creche pet com amplo espaço verde, carinho e monitoramento em Monte Mor/SP. Atendemos a Região Metropolitana de Campinas (RMC).',
+    description: 'Hospedagem canina 24 horas, day care e creche pet com amplo espaço interno, boxes com piso higienizado e monitoramento em Monte Mor/SP. Atendemos toda a RMC.',
     canonical: 'https://hotelquintaldosanimais.com.br/'
   },
   sobre: {
     title: 'Sobre Nós | Hotel Quintal dos Animais em Monte Mor',
-    description: 'Conheça a história do Hotel Quintal dos Animais, idealizado por Geraldo Gomes. Amplo espaço verde sem gaiolas para acolher seu cachorro em Monte Mor e RMC.',
+    description: 'Conheça a história do Hotel Quintal dos Animais, idealizado por Geraldo Gomes. Amplo espaço interno com boxes individuais com piso para acolher seu cachorro em Monte Mor e RMC.',
     canonical: 'https://hotelquintaldosanimais.com.br/sobre'
   },
   servicos: {
-    title: 'Serviços de Hospedagem Canina e Day Care | Hotel Quintal dos Animais',
-    description: 'Hospedagem canina completa, Day Care e creche pet com muito carinho, ar puro e gramado amplo em Monte Mor/SP e Região Metropolitana de Campinas.',
+    title: 'Serviços de Hospedagem Canina 24 Horas | Hotel Quintal dos Animais',
+    description: 'Hospedagem canina 24h, Day Care e creche pet com muito carinho, acomodações higienizadas e atenção individual em Monte Mor/SP e Região Metropolitana de Campinas.',
     canonical: 'https://hotelquintaldosanimais.com.br/servicos'
   },
   contato: {
     title: 'Contato e Reservas | Hotel Quintal dos Animais Monte Mor',
-    description: 'Entre em contato com Geraldo Gomes no Hotel Quintal dos Animais. Faça sua reserva de hospedagem para cachorro via WhatsApp: (19) 99506-4431.',
+    description: 'Entre em contato com Geraldo Gomes no Hotel Quintal dos Animais. Faça sua reserva de hospedagem 24 horas para cachorro via WhatsApp: (19) 99506-4431.',
     canonical: 'https://hotelquintaldosanimais.com.br/contato'
   },
   portal: {

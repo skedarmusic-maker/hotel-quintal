@@ -18,7 +18,7 @@ export default function Contato() {
           Reserve a Hospedagem do Seu Pet em Monte Mor
         </h1>
         <p className="text-lg text-gray-600 font-medium">
-          Estamos prontos para acolher o seu cão com muito amor e amplo espaço verde em Monte Mor/SP.
+          Estamos prontos para acolher o seu cão com muito amor e amplo espaço interno estruturado em Monte Mor/SP.
         </p>
       </div>
 

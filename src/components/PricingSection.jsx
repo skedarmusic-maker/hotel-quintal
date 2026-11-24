@@ -87,7 +87,7 @@ export default function PricingSection() {
                 <ul className="space-y-2 text-xs font-medium text-gray-600 mb-6">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                    <span>Amplo gramado verde ao ar livre</span>
+                    <span>Boxes individuais higienizados com piso</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
@@ -95,7 +95,7 @@ export default function PricingSection() {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                    <span>Supervisão carinhosa do Geraldo Gomes</span>
+                    <span>Supervisão carinhosa e dedicada 24h</span>
                   </li>
                 </ul>
               </div>

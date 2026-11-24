@@ -34,7 +34,7 @@ export default function Footer({ setActiveTab }) {
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
-              O segundo lar do seu cão com amplo espaço verde, liberdade e amor. Localizado em Monte Mor/SP, atendendo toda a Região Metropolitana de Campinas.
+              O segundo lar do seu cão com amplo espaço interno, acomodações higienizadas com piso e amor. Localizado em Monte Mor/SP, atendendo toda a Região Metropolitana de Campinas.
             </p>
             <div className="flex items-center gap-2 text-xs font-medium text-amber-400 bg-amber-950/60 border border-amber-800/60 px-3 py-2 rounded-lg w-fit">
               <ShieldCheck className="w-4 h-4 text-amber-400" />

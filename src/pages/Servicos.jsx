@@ -108,7 +108,7 @@ export default function Servicos({ setActiveTab }) {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-transparent flex items-end p-6">
                     <span className="text-white font-bold text-sm bg-black/40 backdrop-blur-md px-3 py-1 rounded-lg border border-white/20">
-                      Amplo Espaço Verde • Monte Mor/SP
+                      Estrutura com Boxes e Piso • Monte Mor/SP
                     </span>
                   </div>
                 </div>

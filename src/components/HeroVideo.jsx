@@ -30,7 +30,7 @@ export default function HeroVideo({ setActiveTab }) {
         {/* Badge superior */}
         <div className="inline-flex items-center gap-2 bg-amber-500/90 text-gray-950 px-4 py-1.5 rounded-full font-bold text-xs sm:text-sm tracking-wide shadow-lg backdrop-blur-md mb-6 animate-bounce">
           <Sparkles className="w-4 h-4 fill-gray-950" />
-          <span>HOSPEDAGEM CANINA & DAY CARE • AMPLO ESPAÇO VERDE</span>
+          <span>HOSPEDAGEM CANINA 24H & DAY CARE • AMPLO ESPAÇO INTERNO</span>
         </div>
 
         {/* Title H1 para SEO */}
@@ -40,7 +40,7 @@ export default function HeroVideo({ setActiveTab }) {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl lg:text-2xl text-amber-100/90 max-w-3xl mx-auto font-medium leading-relaxed mb-8 drop-shadow-sm">
-          {companyInfo.tagline}. Um refúgio aconchegante com liberdade, gramado amplo e atenção carinhosa 24 horas.
+          {companyInfo.tagline}. Um refúgio aconchegante com boxes individuais com piso, conforto e atenção carinhosa 24 horas.
         </p>
 
         {/* Lista de destaques */}
@@ -49,7 +49,7 @@ export default function HeroVideo({ setActiveTab }) {
             <ShieldCheck className="w-4 h-4 text-amber-400" /> Cuidamos do Seu Pet
           </span>
           <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20">
-            <Sparkles className="w-4 h-4 text-amber-400" /> Amplo Espaço Verde
+            <Sparkles className="w-4 h-4 text-amber-400" /> Boxes com Piso Higienizado
           </span>
           <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20">
             <MapPin className="w-4 h-4 text-amber-400" /> Atendimento Monte Mor & RMC

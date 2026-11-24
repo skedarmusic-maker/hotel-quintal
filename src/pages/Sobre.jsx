@@ -1,5 +1,5 @@
 import React from 'react';
-import { companyInfo, localStoryContent } from '../data/siteData';
+import { companyInfo } from '../data/siteData';
 import { Heart, ShieldCheck, MapPin, Sparkles, Trees, Award, MessageCircle, CheckCircle2 } from 'lucide-react';
 
 export default function Sobre({ setActiveTab }) {
@@ -17,7 +17,7 @@ export default function Sobre({ setActiveTab }) {
           Sobre o Hotel Quintal dos Animais em Monte Mor
         </h1>
         <p className="text-lg text-gray-600 font-medium">
-          Tradição em acolhimento pet, amplo espaço verde e amor incondicional para o seu melhor amigo.
+          Tradição em acolhimento pet, amplo espaço interno estruturado e amor incondicional para o seu melhor amigo.
         </p>
       </div>
 
@@ -38,7 +38,7 @@ export default function Sobre({ setActiveTab }) {
           </p>
 
           <p className="text-sm text-gray-700 leading-relaxed">
-            Sabemos o quanto dói no coração do tutor ter que viajar ou cumprir compromissos profissionais e precisar deixar seu animalzinho. É por isso que criamos um ambiente onde os cães <strong>não ficam presos em gaiolas ou confinamentos frios</strong>. Aqui, eles têm um <strong>AMPLO ESPAÇO VERDE</strong> para correr na grama, sentir o ar puro e brincar com supervisão amorosa constante.
+            Sabemos o quanto dói no coração do tutor ter que viajar ou cumprir compromissos profissionais e precisar deixar seu animalzinho. É por isso que criamos um ambiente onde os cães <strong>não ficam confinados em gaiolas frias</strong>. Aqui, eles contam com um <strong>AMPLO ESPAÇO INTERNO</strong> estruturado com boxes individuais higienizados com piso, ventilação e supervisão amorosa constante.
           </p>
 
           <div className="bg-amber-50 rounded-2xl p-5 border-l-4 border-amber-500 text-sm font-semibold text-gray-800 space-y-2">
@@ -58,7 +58,7 @@ export default function Sobre({ setActiveTab }) {
             />
             <img
               src="/Images/site/15151.jpg"
-              alt="Cachorro correndo no amplo espaço verde em Monte Mor"
+              alt="Cachorro confortável nas instalações do hotel em Monte Mor"
               className="rounded-3xl shadow-lg border-4 border-white object-cover w-full h-64 sm:h-80 mt-8"
             />
           </div>
@@ -66,7 +66,34 @@ export default function Sobre({ setActiveTab }) {
 
       </div>
 
-      {/* 3. ESTRUTURA E LOCALIZAÇÃO PRIVILEGIADA */}
+      {/* 3. SEÇÃO NOVO TOUR EM VÍDEO DA ESTRUTURA REFORMADA */}
+      <section className="bg-white rounded-3xl p-8 sm:p-12 border-2 border-amber-300 shadow-xl space-y-6">
+        <div className="max-w-3xl mx-auto text-center space-y-3">
+          <span className="inline-flex items-center gap-2 bg-amber-500 text-gray-950 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5 fill-gray-950" /> Estrutura Reformada • Conheça os Novos Boxes
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+            Tour em Vídeo pelas Nossas Novas Instalações
+          </h2>
+          <p className="text-sm sm:text-base text-gray-600">
+            Assista ao vídeo real gravado pelo Geraldo Gomes mostrando os novos boxes com piso branco lavável, divisões seguras por porte e pintura nova para acolher seu cão com máxima higiene.
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-200 bg-gray-950">
+          <video
+            controls
+            playsInline
+            className="w-full max-h-[500px] object-cover mx-auto"
+            poster="/Images/site/252.jpg"
+          >
+            <source src="/Images/site/estrutura_nova_boxes.mp4" type="video/mp4" />
+            Seu navegador não suporta a exibição de vídeos.
+          </video>
+        </div>
+      </section>
+
+      {/* 4. ESTRUTURA E LOCALIZAÇÃO PRIVILEGIADA */}
       <section className="bg-gradient-to-br from-amber-50 via-white to-amber-100/50 rounded-3xl p-8 sm:p-12 border border-amber-200 shadow-sm space-y-6">
         <div className="flex items-center gap-3">
           <MapPin className="w-7 h-7 text-amber-600" />
@@ -77,20 +104,20 @@ export default function Sobre({ setActiveTab }) {
 
         <div className="prose prose-amber max-w-none text-sm text-gray-700 leading-relaxed space-y-4">
           <p>
-            Escolhemos o <strong>Parque Café I em Monte Mor</strong> justamente pelo ambiente calmo, arborizado e livre do barulho e do estresse do trânsito urbano. Um local sereno, onde o ar puro e a natureza proporcionam um refúgio de paz genuíno para os animais.
+            Escolhemos o <strong>Parque Café I em Monte Mor</strong> justamente pelo ambiente calmo, arejado e livre do barulho e do estresse do trânsito urbano. Um local sereno que proporciona um refúgio de paz genuíno para os animais.
           </p>
 
           <p>
-            A apenas alguns minutos de <strong>Campinas, Hortolândia, Indaiatuba e Sumaré</strong>, nosso hotel oferece fácil acesso para os tutores que procuram uma hospedagem canina de alto padrão com amplo gramado ao ar livre, perto de casa e com atendimento personalizado.
+            A apenas alguns minutos de <strong>Campinas, Hortolândia, Indaiatuba e Sumaré</strong>, nosso hotel oferece fácil acesso para os tutores que procuram uma hospedagem canina de alto padrão com instalações higienizadas, perto de casa e com atendimento personalizado.
           </p>
 
           <p className="font-semibold text-gray-900 bg-white p-4 rounded-xl border border-amber-200">
-            Aqui seu cão desfruta de liberdade com segurança, em um espaço totalmente preparado para garantir o bem-estar e a diversão durante todo o período de estadia.
+            Aqui seu cão desfruta de conforto com total segurança, em um espaço especialmente reformado para garantir o bem-estar e a tranquilidade durante todo o período de estadia.
           </p>
         </div>
       </section>
 
-      {/* 4. VALORES & PILARES */}
+      {/* 5. VALORES & PILARES */}
       <section className="space-y-8">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-extrabold text-gray-900">
@@ -106,9 +133,9 @@ export default function Sobre({ setActiveTab }) {
             <div className="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-600 font-bold">
               <Trees className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900">1. Amplo Espaço & Liberdade</h3>
+            <h3 className="text-xl font-bold text-gray-900">1. Amplo Espaço Interno</h3>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Priorizamos o contato com a natureza e o exercício físico ao ar livre. Cães felizes são aqueles que podem gastar energia e explorar com liberdade.
+              Instalações amplas, protegidas de chuva e sol forte, com boxes arejados e confortáveis para o descanso seguro do seu cão.
             </p>
           </div>
 
@@ -118,7 +145,7 @@ export default function Sobre({ setActiveTab }) {
             </div>
             <h3 className="text-xl font-bold text-gray-900">2. Segurança & Supervisão</h3>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Estrutura totalmente cercada, segura e monitorada. Acompanhamento rigoroso de vacinas, alimentação adequada e cuidados com a saúde.
+              Estrutura totalmente cercada, com piso lavável de fácil desinfecção. Acompanhamento rigoroso de vacinas, alimentação adequada e cuidados com a saúde.
             </p>
           </div>
 
@@ -134,12 +161,12 @@ export default function Sobre({ setActiveTab }) {
         </div>
       </section>
 
-      {/* 5. SEÇÃO DE VISITA E CONTATO */}
+      {/* 6. SEÇÃO DE VISITA E CONTATO */}
       <div className="bg-gray-950 rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 border-2 border-amber-400">
         <div className="space-y-2 max-w-xl">
           <h3 className="text-2xl font-extrabold text-white">Quer conhecer nosso espaço pessoalmente?</h3>
           <p className="text-sm text-amber-100/80">
-            Agende uma visita com Geraldo Gomes no Parque Café I em Monte Mor. Será um prazer receber você e seu cão para um tour pelo nosso quintal!
+            Agende uma visita com Geraldo Gomes no Parque Café I em Monte Mor. Será um prazer receber você e seu cão para um tour pelas nossas novas instalações!
           </p>
         </div>
         <a

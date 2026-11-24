@@ -22,19 +22,20 @@ export const companyInfo = {
   hours: "Aberto 24 horas",
   region: "Monte Mor, Campinas, Hortolândia, Indaiatuba, Sumaré e RMC",
   heroVideo: "/Images/site/Creating_dog_hotel_background_video_202608141659.mp4",
+  structureVideo: "/Images/site/estrutura_nova_boxes.mp4",
   logo: "/Images/site/LOGO.jpg",
   highlights: [
     "CUIDAMOS DO SEU PET COM DEDICAÇÃO EXCLUSIVA",
-    "AMPLO ESPAÇO VERDE AO AR LIVRE",
-    "SUPERVISÃO E CARINHO INTEGRAL",
-    "SOCIALIZAÇÃO SEGURA E HARMONIOSA"
+    "AMPLO ESPAÇO INTERNO COM BOXES HIGIENIZADOS",
+    "SUPERVISÃO E CARINHO INTEGRAL 24 HORAS",
+    "SEPARAÇÃO SEGURA POR TEMPERAMENTO E PORTE"
   ]
 };
 
 export const pricingData = {
-  title: "Tabela Especial de Lançamento",
-  subtitle: "Transparência total para você planejar a hospedagem do seu pet com o melhor custo-benefício da região",
-  promoBanner: "🔥 Condição Especial de Lançamento • Vagas Limitadas para Monte Mor e RMC",
+  title: "Tabela de Diárias 24 Horas & Day Care",
+  subtitle: "Cobrança simples e transparente: diária completa de 24 horas (dia + pernoite) com o melhor custo-benefício de Monte Mor e região",
+  promoBanner: "🔥 Diária 24 Horas Completa • Acomodações Reformadas com Piso e Higiene Total",
   promoCode: "QUINTAL2026",
   categories: [
     {
@@ -42,9 +43,9 @@ export const pricingData = {
       weight: "5 kg a 10 kg",
       badge: "Cães Pequenos",
       prices: [
-        { period: "Meio Período", price: "20,00", unit: "período" },
-        { period: "Diária (12 Horas)", price: "35,00", unit: "diária", featured: true },
-        { period: "Noturno (Pernoite)", price: "40,00", unit: "pernoite" }
+        { period: "Diária Completa (24 Horas)", price: "75,00", unit: "diária 24h", featured: true },
+        { period: "Day Care / Diurna (12 Horas)", price: "35,00", unit: "diária 12h" },
+        { period: "Meio Período (Até 6h)", price: "20,00", unit: "período" }
       ]
     },
     {
@@ -53,9 +54,9 @@ export const pricingData = {
       badge: "Mais Procurado",
       popular: true,
       prices: [
-        { period: "Meio Período", price: "25,00", unit: "período" },
-        { period: "Diária (12 Horas)", price: "40,00", unit: "diária", featured: true },
-        { period: "Noturno (Pernoite)", price: "45,00", unit: "pernoite" }
+        { period: "Diária Completa (24 Horas)", price: "85,00", unit: "diária 24h", featured: true },
+        { period: "Day Care / Diurna (12 Horas)", price: "40,00", unit: "diária 12h" },
+        { period: "Meio Período (Até 6h)", price: "25,00", unit: "período" }
       ]
     },
     {
@@ -63,9 +64,9 @@ export const pricingData = {
       weight: "Acima de 20 kg",
       badge: "Amplo Espaço",
       prices: [
-        { period: "Meio Período", price: "25,00", unit: "período" },
-        { period: "Diária (12 Horas)", price: "45,00", unit: "diária", featured: true },
-        { period: "Noturno (Pernoite)", price: "50,00", unit: "pernoite" }
+        { period: "Diária Completa (24 Horas)", price: "95,00", unit: "diária 24h", featured: true },
+        { period: "Day Care / Diurna (12 Horas)", price: "45,00", unit: "diária 12h" },
+        { period: "Meio Período (Até 6h)", price: "25,00", unit: "período" }
       ]
     }
   ]
@@ -75,13 +76,13 @@ export const servicesData = [
   {
     id: "creche_mensal",
     title: "Creche Pet - Pacote Mensal",
-    subtitle: "Economia máxima e rotina saudável para quem precisa deixar o pet todos os dias",
-    description: "A escolha perfeita para tutores com rotina corrida de trabalho. No pacote mensal de Creche Pet do Hotel Quintal dos Animais, seu cão desfruta do amplo gramado verde diariamente com descontos exclusivos na diária, socialização supervisionada e carinho constante.",
+    subtitle: "Economia máxima e rotina saudável para quem precisa deixar o pet com frequência",
+    description: "A escolha perfeita para tutores com rotina corrida de trabalho. No pacote mensal do Hotel Quintal dos Animais, seu cão desfruta de um amplo espaço interno seguro, com boxes individuais higienizados, socialização supervisionada e carinho constante.",
     features: [
       "Super descontos na diária no fechamento do pacote mensal",
       "Flexibilidade de dias e horários conforme a sua rotina",
-      "Gasto de energia diário e socialização segura no gramado",
-      "Relatórios, fotos e atualizações no app e WhatsApp",
+      "Acomodações estruturadas com piso e separação por porte",
+      "Relatórios, fotos e atualizações diárias no WhatsApp",
       "Atendimento sob consulta e cotação personalizada"
     ],
     badge: "⭐ Maior Economia",
@@ -90,44 +91,44 @@ export const servicesData = [
   },
   {
     id: "hospedagem",
-    title: "Hospedagem Canina (Pernoite)",
+    title: "Hospedagem Canina 24 Horas",
     subtitle: "Tranquilidade total para suas viagens e compromissos",
-    description: "Espaço amplo para seu pet correr, brincar durante o dia e descansar com todo conforto e segurança à noite. Dormitórios higienizados, aconchegantes e ambiente monitorado.",
+    description: "Espaço amplo interno para seu pet brincar durante o dia e descansar com todo conforto e segurança à noite. Boxes individuais higienizados com piso, aconchegantes e monitorados com presença constante do responsável.",
     features: [
-      "Amplo quintal verde para atividades",
+      "Boxes individuais com piso novo, limpo e lavável",
       "Alimentação e medicação conforme orientação do tutor",
-      "Relatórios diários e fotos/vídeos via WhatsApp",
-      "Monitoramento constante com presença do responsável"
+      "Relatórios diários com fotos e vídeos pelo WhatsApp",
+      "Monitoramento constante com dedicação exclusiva do Geraldo Gomes"
     ],
     badge: "Mais Procurado",
     iconName: "Home"
   },
   {
     id: "daycare",
-    title: "Day Care / Diária Avulsa",
-    subtitle: "Gaste a energia do seu pet enquanto você trabalha",
-    description: "Perfeito para cães que passam muito tempo sozinhos em casa. No Day Care do Hotel Quintal dos Animais, seu dog se exercita, faz novos amigos e volta para casa relaxado.",
+    title: "Day Care / Diária Diurna",
+    subtitle: "Gaste a energia do seu pet com segurança enquanto você trabalha",
+    description: "Perfeito para cães que passam muito tempo sozinhos em casa. No Day Care do Hotel Quintal dos Animais, seu dog se exercita em espaço seguro, recebe carinho e volta para casa relaxado.",
     features: [
-      "Recreação em grupo supervisionada",
-      "Brincadeiras e estímulo mental",
-      "Socialização positiva",
-      "Flexibilidade de horários para tutores"
+      "Recreação em espaço interno amplo e seguro",
+      "Brincadeiras e estímulo mental supervisionado",
+      "Socialização positiva e separação preventiva de portes",
+      "Flexibilidade de horários para tutores de Monte Mor e RMC"
     ],
     badge: "Ideal para o dia a dia",
     iconName: "Sun"
   },
   {
     id: "recreacao",
-    title: "Recreação em Amplo Espaço Verde",
-    subtitle: "Liberdade que o seu cão precisa para ser feliz",
-    description: "Diferente de baias confinadas, oferecemos um espaço aberto integrado à natureza em Monte Mor, onde os pets vivem momentos de pura alegria e liberdade com supervisão carinhosa.",
+    title: "Acomodações Estruturadas & Boxes com Piso",
+    subtitle: "Segurança, higiene e tranquilidade para o seu cão",
+    description: "Nossa nova estrutura conta com boxes individuais arejados, cerquinhas firmes e piso lavável higienizado, garantindo conforto e saúde para animais de todos os portes.",
     features: [
-      "Gramado amplo e arejado",
-      "Áreas de sombra para descanso",
-      "Atividades com bolinhas e obstáculos leves",
-      "Respeito ao ritmo de cada animal"
+      "Boxes novos com piso higienizado e fácil desinfecção",
+      "Área interna coberta e protegida de sol excessivo e chuva",
+      "Divisões seguras para respeitar o espaço e temperamento de cada cão",
+      "Ambiente calmo no Parque Café I em Monte Mor"
     ],
-    badge: "Liberdade & Natureza",
+    badge: "Estrutura Reformada",
     iconName: "Trees"
   },
   {
@@ -136,10 +137,10 @@ export const servicesData = [
     subtitle: "Atenção máxima para filhotes, idosos ou pets com necessidades",
     description: "Sabemos que cada animal é único. Respeitamos a rotina alimentar, administração de medicamentos receitados pelo veterinário e o tempo de repouso de cada hospedado.",
     features: [
-      "Administração correta de medicamentos",
-      "Atenção dedicada a cães idosos",
-      "Ambiente calmo e acolhedor",
-      "Frequente acompanhamento do Geraldo Gomes"
+      "Administração rigorosa de medicamentos prescritos",
+      "Atenção dedicada a cães idosos ou em recuperação",
+      "Ambiente acolhedor e silencioso",
+      "Acompanhamento pessoal e diário do Geraldo Gomes"
     ],
     badge: "Atenção VIP",
     iconName: "HeartHandshake"
@@ -148,13 +149,13 @@ export const servicesData = [
 
 export const differentialsData = [
   {
-    title: "Amplo Espaço Verde",
-    description: "Área aberta ampla e segura em Monte Mor para o pet correr, explorar e se divertir livremente.",
+    title: "Amplo Espaço Interno",
+    description: "Área ampla, arejada e estruturada com boxes individuais e piso higienizado em Monte Mor.",
     icon: "TreeGreen"
   },
   {
     title: "Acolhimento & Carinho",
-    description: "Geraldo Gomes e sua equipe tratam seu pet como membro da própria família, sem estresse.",
+    description: "Geraldo Gomes e sua equipe tratam seu pet como membro da própria família, com atenção 24 horas.",
     icon: "Heart"
   },
   {
@@ -170,20 +171,19 @@ export const differentialsData = [
 ];
 
 export const localStoryContent = {
-  title: "Seu Pet Seguro, Livre e Amado no Nosso Amplo Espaço Verde",
+  title: "Seu Pet Seguro, Confortável e Amado no Nosso Amplo Espaço Interno",
   subtitle: "Tranquilidade total para você viajar sabendo que seu dog está em boas mãos",
-  text1: "No Hotel Quintal dos Animais, acreditamos que todo cão merece liberdade, ar puro e carinho verdadeiro. Localizado no Parque Café I em Monte Mor, nosso espaço foi estruturado para oferecer um ambiente calmo, seguro e integrado à natureza para pets de toda a Região Metropolitana de Campinas (RMC).",
-  text2: "Ao contrário das hospedagens tradicionais com baias fechadas e confinamento, priorizamos a recreação ao ar livre, o gasto de energia saudável e a socialização harmoniosa. Seu cachorro corre na grama, brinca ao ar livre e descansa em dormitórios aconchegantes e higienizados.",
-  text3: "Idealizado e administrado por Geraldo Gomes, nosso foco é a atenção individualizada: acompanhamos a rotina alimentar, medicamentos e temperamento de cada hospedado. Além disso, enviamos fotos e vídeos diários no seu WhatsApp para você acompanhar a alegria do seu pet com total paz de espírito."
+  text1: "No Hotel Quintal dos Animais, acreditamos que todo cão merece conforto, higiene e carinho verdadeiro. Localizado no Parque Café I em Monte Mor, nosso espaço foi estruturado com boxes individuais higienizados com piso, oferecendo um ambiente seguro e acolhedor para pets de toda a Região Metropolitana de Campinas (RMC).",
+  text2: "Priorizamos o bem-estar e a tranquilidade: os cães contam com áreas separadas por porte e afinidade em acomodações protegidas, arejadas e limpas. Seu cachorro relaxa, é bem alimentado e descansa com supervisão amorosa constante.",
+  text3: "Idealizado e administrado por Geraldo Gomes, nosso foco é a atenção individualizada: acompanhamos a rotina alimentar, medicamentos e temperamento de cada hospedado. Além disso, enviamos fotos e vídeos diários no seu WhatsApp para você acompanhar a tranquilidade do seu pet com total paz de espírito."
 };
 
 export const galleryImages = [
-  { url: "/Images/site/00202.jpg", title: "Amplo espaço para correr", alt: "Cachorro brincando no amplo gramado do Hotel Quintal dos Animais em Monte Mor" },
-  { url: "/Images/site/1414.jpg", title: "Carinho e supervisão constante", alt: "Pet feliz recebendo atenção no hotel para cachorro" },
-  { url: "/Images/site/15151.jpg", title: "Liberdade ao ar livre", alt: "Cão correndo na área verde" },
   { url: "/Images/site/252.jpg", title: "Momento de afeto e aconchego", alt: "Cuidador dando carinho ao pet hospedado" },
-  { url: "/Images/site/2525.jpg", title: "Socialização harmoniosa", alt: "Cães interagindo no quintal" },
-  { url: "/Images/site/27452.jpg", title: "Descanso na sombra", alt: "Pet relaxando no jardim" },
+  { url: "/Images/site/1414.jpg", title: "Carinho e supervisão constante", alt: "Pet feliz recebendo atenção no hotel para cachorro" },
+  { url: "/Images/site/00202.jpg", title: "Amplo espaço acolhedor", alt: "Cachorro no Hotel Quintal dos Animais em Monte Mor" },
+  { url: "/Images/site/2525.jpg", title: "Socialização harmoniosa", alt: "Cães interagindo com tranquilidade" },
+  { url: "/Images/site/27452.jpg", title: "Descanso protegido", alt: "Pet relaxando nas acomodações" },
   { url: "/Images/site/IMG-20260805-WA0002.jpg", title: "Instalações acolhedoras", alt: "Estrutura do Hotel Quintal dos Animais no Parque Café I Monte Mor" },
   { url: "/Images/site/hotel-pet-santo-andre-1.png.webp", title: "Espaço seguro e delimitado", alt: "Área de recreação para cachorros em Monte Mor" }
 ];
@@ -203,11 +203,11 @@ export const faqData = [
   },
   {
     q: "O hotel aceita cachorros de todos os portes?",
-    a: "Sim! Avaliamos o temperamento do animal para promover uma socialização harmoniosa e segura, separando por porte e afinidade quando necessário em nosso amplo espaço."
+    a: "Sim! Avaliamos o temperamento do animal para promover uma estadia harmoniosa e segura, separando por porte em boxes individuais com piso quando necessário em nossa estrutura."
   },
   {
     q: "Onde o Hotel Quintal dos Animais fica localizado?",
-    a: "Estamos localizados na R. ANGELINA SCARASSATTI VIGNANDO, 435 - PQ. CAFÉ I - MONTE MOR/SP. Um local calmo, arborizado e de facílimo acesso para quem mora em Monte Mor, Campinas, Hortolândia, Indaiatuba e região."
+    a: "Estamos localizados na R. ANGELINA SCARASSATTI VIGNANDO, 435 - PQ. CAFÉ I - MONTE MOR/SP. Um local calmo, arejado e de facílimo acesso para quem mora em Monte Mor, Campinas, Hortolândia, Indaiatuba e região."
   }
 ];
 
@@ -215,12 +215,12 @@ export const testimonials = [
   {
     name: "Mariana Silva & Thor",
     city: "Campinas / SP",
-    text: "Precisei viajar de emergência a trabalho e fiquei com o coração na mão por deixar o Thor. O Geraldo foi sensacional! Me mandava vídeos do Thor correndo no gramado todo dia. Quando fui buscar, meu dog nem queria ir embora de tão feliz!"
+    text: "Precisei viajar de emergência a trabalho e fiquei com o coração na mão por deixar o Thor. O Geraldo foi sensacional! Me mandava vídeos do Thor super bem cuidado todo dia. Quando fui buscar, meu dog estava super feliz e tranquilo!"
   },
   {
     name: "Carlos Eduardo & Mel",
     city: "Monte Mor / SP",
-    text: "O amplo espaço verde faz toda a diferença. A Mel odeia ficar em gaiolas ou espaços fechados. No Quintal dos Animais ela fica solta, brinca bastante e volta pra casa super calma. Recomendo de olhos fechados!"
+    text: "O espaço interno estruturado e os boxes com piso fazem toda a diferença na higiene e segurança. No Quintal dos Animais a Mel recebe carinho, fica calma e volta para casa bem cuidada. Recomendo de olhos fechados!"
   },
   {
     name: "Fernanda Ribeiro & Bob",

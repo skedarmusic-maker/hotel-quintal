@@ -114,7 +114,7 @@ export default function ContactForm() {
             >
               <option value="Hospedagem Canina (Pernoite)">Hospedagem Canina (Pernoite)</option>
               <option value="Day Care / Creche Pet">Day Care / Creche Pet</option>
-              <option value="Recreação em Espaço Verde">Recreação em Espaço Verde</option>
+              <option value="Hospedagem 24 Horas">Hospedagem 24 Horas</option>
               <option value="Cuidados Especiais / Outro">Cuidados Especiais / Outro</option>
             </select>
           </div>
